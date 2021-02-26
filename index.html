@@ -1,33 +1,86 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+﻿<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso em Video</title>
-    <link rel="stylesheet" href="estilos/style.css">
+<meta charset="utf-8">
+<title>Menu Responsivo jQuery</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/menu.js"></script>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      font-size: 30px;
+      text-align: center;
+    }
+    
+    .flex-item-left {
+      background-color: #fdfdfd;
+      padding: 10px;
+      flex: 50%;
+    }
+    
+    .flex-item-right {
+      background-color: rgb(0, 0, 0);
+      color: azure;
+      padding: 10px;
+      flex: 50%;
+    }
+    
+    /* Responsive layout - makes a one column-layout instead of two-column layout */
+    @media (max-width: 800px) {
+      .flex-container {
+        flex-direction: column;
+      }
+    }
+    </style>
 </head>
+
 <body>
-    <main>
-        <header>
-            <h1>Cursos Gratis</h1>
-        </header>
-        <article>
-            <h2>Curso de HTML5 com CSS3</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Veritatis modi placeat in consequuntur, distinctio, necessitatibus
-                 alias tempora esse quam possimus fugi
-                praesentium commodi ratione rerum minus, asperiores fuga quod 
-                facilis?</p>
-        </article>
-        <article>
-            <h2>Curso de Java Script</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur 
-                repudiandae quibusdam quae maiores fugit porro necessitatibus,
-                 laudantium error eligendi debitis ducimus voluptates.
-                 Alias illo explicabo cupiditate amet consectetur fugiat 
-                 voluptas!</p>
-        </article>
-    </main>
+
+<header>
+
+<div id="hamburger">
+   <div id="top"></div>
+   <div id="middle"></div>
+   <div id="bottom"></div>
+</div>
+
+</header>
+
+<div id="menu">
+
+ <nav>
+ <a href="#">QUEM SOMOS</a>
+ <a href="#">MODELOS DE CORTE</a>
+ <a href="#">CONTATO</a>
+ 
+ 
+ <div id="close">
+ <div id="close_left"></div>
+ <div id="close_right"></div>
+ </div>
+ 
+ 
+
+ </nav>
+ 
+</div>
+<H1>Mais que um corte</H1>
+
+<div class="flex-container">
+    <div class="flex-item-right">Ferramentas de Trabalho</div>
+    
+    <div class="flex-item-left">Método</div>
+    <div class="flex-item-right">Ergonomia</div>
+    <div class="flex-item-left">Degrade 3 tons</div>
+    <div class="flex-item-right">Cosméticos</div>
+    
+    
+  </div>
 </body>
 </html>
