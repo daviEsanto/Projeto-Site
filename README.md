@@ -1,5 +1,4 @@
 # Projeto-Site
- Projeto de um site criado durante o curso de Git e GitHub
+Iniviando um site de cabeleireiro
 
-
-Continuando o desenvolvimento.....
+ainda em desenvolvimento
